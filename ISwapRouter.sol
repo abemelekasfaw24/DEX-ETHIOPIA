@@ -19,7 +19,7 @@ interface ISwapRouter {
     ) external returns (uint256 amountInRequired);
 }
 contract SimpleSwap {
-    ISwapRouter public immutable  swapRouter;
+    ISwapRouter public immutable swapRouter;
 
     constructor(ISwapRouter _swapRouter) {
         swapRouter = _swapRouter;
